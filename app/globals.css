@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-light: #eeeeee;
+  --color-dark: #111111;
+  --color-grey: #777777;
+  --background-primary: #1b1b1b;
+  --background-secondary: #333333;
+}
+
+@layer base {
+  html,
+  body {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    position: relative;
+    height: 100dvh;
+    color: var(--color-light);
+    background-color: var(--background-primary);
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+}

@@ -1,7 +1,6 @@
 "use client";
 
-import type { NavbarItemType } from "@/app/_types";
-import clsx from "clsx";
+import cx from "clsx";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -9,7 +8,7 @@ export default function NavbarItem({ item }: { item: NavbarItemType }) {
   return (
     <Link
       href={`#${item.id}`}
-      className={clsx(
+      className={cx(
         "group",
         "flex items-center justify-center",
         "h-8 w-8 cursor-pointer rounded-full border border-transparent bg-[--background-primary] transition-all",
@@ -17,7 +16,7 @@ export default function NavbarItem({ item }: { item: NavbarItemType }) {
         "md:h-10 md:w-10",
       )}
     >
-      <div className={clsx("relative h-4 w-4", "md:h-5 md:w-5")}>
+      <div className={cx("relative h-4 w-4", "md:h-5 md:w-5")}>
         <Image
           src={`/navbar/${item.id}.svg`}
           alt={`${item.id} icon`}
@@ -25,7 +24,7 @@ export default function NavbarItem({ item }: { item: NavbarItemType }) {
         />
       </div>
       <div
-        className={clsx(
+        className={cx(
           "group-hover:block",
           "absolute right-[calc(100%+8px)] hidden",
           "text-nowrap bg-[--background-primary] bg-transparent text-right text-xs",

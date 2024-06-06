@@ -1,9 +1,9 @@
 "use client";
 
-import type { NavbarItemType } from "@/app/_types";
-import anime from "animejs/lib/anime.es.js";
-import clsx from "clsx";
 import { Fragment, useEffect } from "react";
+import cx from "clsx";
+import anime from "animejs/lib/anime.es.js";
+
 import ScrollToTop from "../scroll-to-top/ScrollToTop";
 import NavbarItem from "./_components/NavbarItem";
 
@@ -41,13 +41,13 @@ export default function NavigationBar() {
   }, []);
 
   return (
-    <div className={clsx("fixed bottom-0 right-2 top-0 z-20", "md:right-5")}>
+    <div className={cx("fixed bottom-0 right-2 top-0 z-20", "md:right-5")}>
       <div
         id="navbar-line"
-        className={clsx("mx-auto h-1/2 w-[0.75px] bg-[--background-secondary]")}
+        className={cx("mx-auto h-1/2 w-[0.75px] bg-[--background-secondary]")}
       ></div>
       <div
-        className={clsx(
+        className={cx(
           "flex flex-col gap-1",
           "rounded-full bg-[--background-secondary] p-1",
         )}

@@ -1,7 +1,8 @@
-import { GoogleAnalytics } from "@next/third-parties/google";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import AppHeader from "./_components/header/AppHeader";
+
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });

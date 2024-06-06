@@ -1,5 +1,7 @@
 import React from "react";
-import clsx from "clsx";
+import cx from "clsx";
+
+import AnchorBadge from "../generic/AnchorBadge";
 
 export default function SectionTitle({
   title,
@@ -9,7 +11,8 @@ export default function SectionTitle({
   anchorId: string;
 }) {
   return (
-    <h3 id={anchorId} className={clsx("pt-10 text-lg font-bold")}>
+    <h3 id={anchorId} className={cx("pt-10 text-lg font-bold")}>
+      <AnchorBadge />
       {title}
     </h3>
   );

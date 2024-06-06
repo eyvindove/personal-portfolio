@@ -1,9 +1,10 @@
 "use client";
 
-import useScrollToTop from "@/app/_hooks/useScrollToTopVisible";
-import clsx from "clsx";
-import Image from "next/image";
 import { useEffect } from "react";
+import Image from "next/image";
+import cx from "clsx";
+
+import useScrollToTop from "@/app/_hooks/useScrollToTopVisible";
 
 export default function ScrollToTop() {
   const isVisible = useScrollToTop();
@@ -20,7 +21,7 @@ export default function ScrollToTop() {
 
   return (
     <div
-      className={clsx(
+      className={cx(
         "absolute bottom-8 flex items-center justify-center",
         "m-1 h-8 w-8 cursor-pointer rounded-full border border-transparent bg-[--background-primary] transition-all",
         "hover:border-[--color-light]",
@@ -29,7 +30,7 @@ export default function ScrollToTop() {
       )}
       onClick={scrollToTop}
     >
-      <div className={clsx("relative h-4 w-4", "md:h-5 md:w-5")}>
+      <div className={cx("relative h-4 w-4", "md:h-5 md:w-5")}>
         <Image
           src={`/generic/arrow-circle-up.svg`}
           alt={`back to top icon`}

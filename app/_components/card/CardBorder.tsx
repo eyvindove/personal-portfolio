@@ -1,5 +1,5 @@
-import clsx from "clsx";
 import React from "react";
+import cx from "clsx";
 
 export default function CardBorder({
   children,
@@ -8,7 +8,7 @@ export default function CardBorder({
 }) {
   return (
     <div
-      className={clsx(
+      className={cx(
         "rounded",
         "bg-gradient-to-r from-amber-900 to-amber-950 p-[2px]",
       )}

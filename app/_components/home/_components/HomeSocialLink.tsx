@@ -1,5 +1,4 @@
-import type { SocialConfigType } from "@/app/_types";
-import clsx from "clsx";
+import cx from "clsx";
 import Link from "next/link";
 import { TfiGithub, TfiLinkedin } from "react-icons/tfi";
 
@@ -20,20 +19,20 @@ const socialLinkConfig: SocialConfigType[] = [
 
 export default function HomeSocialLink() {
   return (
-    <div className={clsx("flex justify-center gap-5", "md:justify-start")}>
+    <div className={cx("flex justify-center gap-5", "md:justify-start")}>
       {socialLinkConfig.map((item) => (
         <Link
           key={item.id}
           href={item.link}
           target="_blank"
-          className={clsx(
+          className={cx(
             "flex items-center gap-1",
             "rounded-full bg-amber-500 bg-opacity-60 p-1 transition-all",
             "hover:bg-opacity-90",
           )}
         >
           <div
-            className={clsx(
+            className={cx(
               "flex items-center justify-center",
               "h-6 w-6 rounded-full bg-[--background-primary]",
               "md:h-8 md:w-8",
@@ -41,9 +40,7 @@ export default function HomeSocialLink() {
           >
             {item.icon}
           </div>
-          <div className={clsx("px-2 text-sm", "md:text-base")}>
-            {item.label}
-          </div>
+          <div className={cx("px-2 text-sm", "md:text-base")}>{item.label}</div>
         </Link>
       ))}
     </div>

@@ -1,5 +1,3 @@
-import type { ExperienceType, SkillType } from "@/app/_types";
-
 type ProfileType = {
   name: string;
   title: string;

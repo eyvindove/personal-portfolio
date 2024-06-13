@@ -28,6 +28,10 @@ const navbarConfig: NavbarItemType[] = [
     id: "education",
     label: "Education",
   },
+  {
+    id: "playground",
+    label: "Playground",
+  },
 ];
 
 export default function NavigationBar() {

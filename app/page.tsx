@@ -1,11 +1,12 @@
 import cx from "clsx";
 
-import EducationContainer from "./_components/education/EducationContainer";
 import HomeContainer from "./_components/home/HomeContainer";
 import LanguageContainer from "./_components/language/LanguageContainer";
 import NavigationBar from "./_components/navigationbar/NavigationBar";
 import SkillContainer from "./_components/skill/SkillContainer";
 import WorkExperienceContainer from "./_components/work/WorkExperienceContainer";
+import EducationContainer from "./_components/education/EducationContainer";
+import PlaygroundContainer from "./_components/playground/PlaygroundContainer";
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
       <LanguageContainer />
       <WorkExperienceContainer />
       <EducationContainer />
+      <PlaygroundContainer />
     </main>
   );
 }

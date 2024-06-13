@@ -16,7 +16,7 @@ export default function SkillCard({ item }: { item: SkillType }) {
       <div
         className={cx(
           "flex items-center gap-3",
-          "rounded bg-[--background-primary] p-3",
+          "h-full w-full rounded bg-[--background-primary] p-3",
         )}
       >
         <div

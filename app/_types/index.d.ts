@@ -28,6 +28,15 @@ declare global {
     devStack?: string[];
     link?: [string, string][];
   };
+
+  type PlaygroundType = {
+    id: string;
+    title: string;
+    description: string;
+    image: string;
+    demo: string;
+    github: string;
+  };
 }
 
 export {};

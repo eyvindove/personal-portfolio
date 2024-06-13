@@ -10,6 +10,7 @@ type ConfigDataType = {
   language: SkillType[];
   workExperience: ExperienceType[];
   education: ExperienceType[];
+  playground: PlaygroundType[];
 };
 
 export const configData: ConfigDataType = {
@@ -301,6 +302,26 @@ export const configData: ConfigDataType = {
       place: "Tamkang University (TKU), New Taipei",
       duration: "Sep. 2006 ~ Jan. 2011",
       description: "",
+    },
+  ],
+  playground: [
+    {
+      id: "react-weather",
+      title: "React Weather App",
+      description:
+        "A weather app for checking weather information of major cities in the world, which is built by React, TypeScript, Vite, and Mantine UI.",
+      image: "react-weather.png",
+      demo: "https://react-weather-eyvindove.vercel.app/",
+      github: "https://github.com/eyvindove/react-weather",
+    },
+    {
+      id: "vue3-todolist",
+      title: "Vue3 Todo List",
+      description:
+        "A Todo List with basic functions, which is built by Vue3, Typescript, Vite and TailwindCSS.",
+      image: "vue3-todolist.png",
+      demo: "https://vue3-todolist-eyvindove.vercel.app/",
+      github: "https://github.com/eyvindove/vue3-todolist",
     },
   ],
 };

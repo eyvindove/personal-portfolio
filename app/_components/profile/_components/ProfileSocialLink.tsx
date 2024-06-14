@@ -1,5 +1,6 @@
-import cx from "clsx";
 import Link from "next/link";
+import cx from "clsx";
+import { IconContext } from "react-icons";
 import { TfiGithub, TfiLinkedin } from "react-icons/tfi";
 
 const socialLinkConfig: SocialConfigType[] = [
@@ -26,7 +27,7 @@ export default function ProfileSocialLink() {
           href={item.link}
           target="_blank"
           className={cx(
-            "flex items-center gap-1",
+            "flex items-center",
             "rounded-full bg-amber-500 bg-opacity-60 p-1 transition-all",
             "hover:bg-opacity-90",
           )}
@@ -35,12 +36,14 @@ export default function ProfileSocialLink() {
             className={cx(
               "flex items-center justify-center",
               "h-6 w-6 rounded-full bg-[--background-primary]",
-              "md:h-8 md:w-8",
+              "md:h-6 md:w-6",
             )}
           >
-            {item.icon}
+            <IconContext.Provider value={{ size: "12px" }}>
+              {item.icon}
+            </IconContext.Provider>
           </div>
-          <div className={cx("px-2 text-sm", "md:text-base")}>{item.label}</div>
+          <div className={cx("px-2 text-xs", "md:text-base")}>{item.label}</div>
         </Link>
       ))}
     </div>

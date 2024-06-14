@@ -19,6 +19,8 @@ declare global {
     iconText?: string;
   };
 
+  type ExperienceLinkType = string[];
+
   type ExperienceType = {
     id: string;
     role: string[];
@@ -26,7 +28,7 @@ declare global {
     duration: string;
     description: string;
     devStack?: string[];
-    link?: [string, string][];
+    link?: ExperienceLinkType[];
   };
 
   type PlaygroundType = {

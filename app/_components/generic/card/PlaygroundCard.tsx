@@ -12,16 +12,14 @@ export default function PlaygroundCard({ item }: { item: PlaygroundType }) {
         "basis-[100%] rounded",
         "md:basis-[calc((100%-12px)/2)]",
         "lg:basis-[calc((100%-24px)/3)]",
-        "xl:basis-[calc((100%-36px)/4)]",
       ]}
       customInnerClasses={["flex flex-col gap-3"]}
     >
       <div
         className={cx(
-          "relative h-[360px] w-full",
-          "md:h-[300px]",
-          "lg:h-[280px]",
-          "xl:h-[240px]",
+          "relative h-[300px] w-full",
+          "md:h-[280px]",
+          "lg:h-[240px]",
         )}
       >
         <Image

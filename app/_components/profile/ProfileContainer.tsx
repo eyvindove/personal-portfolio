@@ -5,10 +5,10 @@ import cx from "clsx";
 import Link from "next/link";
 import { useEffect } from "react";
 
-import HomeProfile from "./_components/HomeProfile";
-import HomeSocialLink from "./_components/HomeSocialLink";
+import Profile from "./_components/Profile";
+import ProfileSocialLink from "./_components/ProfileSocialLink";
 
-export default function HomeContainer() {
+export default function ProfileContainer() {
   useEffect(() => {
     anime({
       targets: "#home-bg-ball",
@@ -47,8 +47,8 @@ export default function HomeContainer() {
       ></div>
 
       <div className={cx("flex flex-col gap-8", "w-4/5 p-4", "md:gap-10")}>
-        <HomeProfile />
-        <HomeSocialLink />
+        <Profile />
+        <ProfileSocialLink />
 
         <div className={cx("flex", "w-full")}>
           <Link

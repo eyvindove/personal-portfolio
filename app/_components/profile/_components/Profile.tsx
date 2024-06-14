@@ -3,7 +3,7 @@ import cx from "clsx";
 
 import AnchorBadge from "../../generic/AnchorBadge";
 
-export default function HomeProfile() {
+export default function Profile() {
   return (
     <div className={cx("flex flex-col gap-4")}>
       <div className={cx("font-permanent-marker", "text-2xl", "md:text-4xl")}>

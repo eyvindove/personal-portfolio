@@ -1,7 +1,7 @@
 import React from "react";
 import cx from "clsx";
 
-import AnchorBadge from "../generic/AnchorBadge";
+import AnchorBadge from "../AnchorBadge";
 
 export default function SectionTitle({
   title,

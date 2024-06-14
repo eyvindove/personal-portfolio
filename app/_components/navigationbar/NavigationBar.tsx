@@ -4,7 +4,7 @@ import { Fragment, useEffect } from "react";
 import cx from "clsx";
 import anime from "animejs/lib/anime.es.js";
 
-import ScrollToTop from "../scroll-to-top/ScrollToTop";
+import ScrollToTop from "../generic/scroll-to-top/ScrollToTop";
 import NavbarItem from "./_components/NavbarItem";
 
 const navbarConfig: NavbarItemType[] = [

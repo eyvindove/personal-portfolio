@@ -1,10 +1,9 @@
 import { Fragment } from "react";
 import cx from "clsx";
 import Image from "next/image";
-import Link from "next/link";
 
 import CardBorder from "./CardBorder";
-import ExternalLink from "../generic/ExternalLink";
+import ExternalLink from "../ExternalLink";
 
 export default function ExperienceCard({ item }: { item: ExperienceType }) {
   return (

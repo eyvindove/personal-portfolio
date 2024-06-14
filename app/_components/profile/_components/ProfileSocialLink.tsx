@@ -17,7 +17,7 @@ const socialLinkConfig: SocialConfigType[] = [
   },
 ];
 
-export default function HomeSocialLink() {
+export default function ProfileSocialLink() {
   return (
     <div className={cx("flex justify-center gap-5", "md:justify-start")}>
       {socialLinkConfig.map((item) => (

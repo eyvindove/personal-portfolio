@@ -2,9 +2,9 @@ import { Fragment } from "react";
 import { configData } from "@/app/_config";
 import cx from "clsx";
 
-import ExperienceCard from "@/app/_components/card/ExperienceCard";
-import SectionContainer from "@/app/_components/section/SectionContainer";
-import SectionTitle from "@/app/_components/section/SectionTitle";
+import ExperienceCard from "@/app/_components/generic/card/ExperienceCard";
+import SectionContainer from "@/app/_components/generic/section/SectionContainer";
+import SectionTitle from "@/app/_components/generic/section/SectionTitle";
 
 export default function EducationContainer() {
   return (

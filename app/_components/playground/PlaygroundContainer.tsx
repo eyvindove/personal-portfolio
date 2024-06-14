@@ -2,9 +2,9 @@ import { Fragment } from "react";
 import cx from "clsx";
 import { configData } from "@/app/_config";
 
-import SectionContainer from "../section/SectionContainer";
-import SectionTitle from "../section/SectionTitle";
-import PlaygroundCard from "../card/PlaygroundCard";
+import SectionContainer from "../generic/section/SectionContainer";
+import SectionTitle from "../generic/section/SectionTitle";
+import PlaygroundCard from "../generic/card/PlaygroundCard";
 
 export default function PlaygroundContainer() {
   return (

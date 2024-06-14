@@ -1,6 +1,6 @@
 import cx from "clsx";
 
-import HomeContainer from "./_components/home/HomeContainer";
+import ProfileContainer from "./_components/profile/ProfileContainer";
 import LanguageContainer from "./_components/language/LanguageContainer";
 import NavigationBar from "./_components/navigationbar/NavigationBar";
 import SkillContainer from "./_components/skill/SkillContainer";
@@ -17,7 +17,7 @@ export default function Home() {
       )}
     >
       <NavigationBar />
-      <HomeContainer />
+      <ProfileContainer />
       <SkillContainer />
       <LanguageContainer />
       <WorkExperienceContainer />

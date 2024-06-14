@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import cx from "clsx";
 
-import ExternalLink from "../generic/ExternalLink";
+import ExternalLink from "../ExternalLink";
 
 export default function PlaygroundCard({ item }: { item: PlaygroundType }) {
   return (

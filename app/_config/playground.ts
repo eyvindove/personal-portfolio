@@ -1,5 +1,13 @@
 const playground = [
   {
+    id: "react-mantine-admin",
+    title: "React Mantine Admin",
+    description: `A Mantine UI based administrator playground, which is built by Next.js and Mantine UI.`,
+    image: "react-mantine-admin.png",
+    demo: "https://react-mantine-admin-eyvindove.vercel.app/",
+    github: "https://github.com/eyvindove/react-mantine-admin",
+  },
+  {
     id: "react-weather",
     title: "React Weather App",
     description: `A weather app for checking weather & forecast information of major cities in the world, which is built by React, TypeScript, Vite, and Mantine UI.`,

@@ -4,9 +4,8 @@ A personal portfolio is built up by Next.js & its ecosystem.
 
 [Live Demo](https://eyvindove.vercel.app/)
 
-Find more...
+Basic environment & find more...
 
-- [Vite](https://vitejs.dev/)
 - [Next](https://nextjs.org/)
 - [React](https://react.dev/)
 - [TypeScript](https://www.typescriptlang.org/)

@@ -1,14 +1,14 @@
 const language: SkillType[] = [
   {
     id: 'english',
-    label: 'English - TOEIC BLUE',
+    label: 'English - TOEIC BLUE certificate',
     level: 4,
     iconId: '',
     iconText: 'EN',
   },
   {
     id: 'japanese',
-    label: 'Japanese - JLPT N3',
+    label: 'Japanese - JLPT N3 certificate',
     level: 3,
     iconId: '',
     iconText: 'JP',

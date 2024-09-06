@@ -9,7 +9,7 @@ export default function ExperienceCard({ item }: { item: ExperienceType }) {
   return (
     <CardBorder customInnerClasses={['flex flex-col gap-3', 'md:flex-row']}>
       <div
-        className={cx('relative h-8 w-8 shrink-0 overflow-hidden rounded-full')}
+        className={cx('relative h-8 w-8 shrink-0 overflow-hidden rounded-sm')}
       >
         <Image
           src={`/logo/${item.id}-logo.jpeg`}

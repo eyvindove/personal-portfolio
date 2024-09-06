@@ -1,3 +1,6 @@
+/**
+ * Icon from: https://www.npmjs.com/package/tech-stack-icons?activeTab=readme
+ */
 const skill: SkillType[] = [
   {
     id: 'reactjs',
@@ -58,6 +61,19 @@ const skill: SkillType[] = [
     label: 'Webpack',
     level: 3,
     iconId: 'webpack',
+  },
+  {
+    id: 'canvas',
+    label: 'Canvas',
+    level: 3,
+    iconId: '',
+    iconText: 'Canvas',
+  },
+  {
+    id: 'threejs',
+    label: 'Three.js',
+    level: 2,
+    iconId: 'threejs',
   },
   {
     id: 'npm',

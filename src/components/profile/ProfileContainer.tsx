@@ -54,8 +54,9 @@ export default function ProfileContainer() {
           <Link
             href='#skill'
             className={cx(
-              'mx-auto rounded-full bg-amber-500 bg-opacity-20 px-3 py-1',
+              'mx-auto rounded-full bg-amber-500 bg-opacity-20 px-3 py-1 transition-all',
               'animate-bounce',
+              'hover:bg-opacity-30',
             )}
           >
             ⇃ About Me ⇂

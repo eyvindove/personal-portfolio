@@ -1,13 +1,33 @@
 const workExperience: ExperienceType[] = [
   {
+    id: 'nunox',
+    role: ['Frontend Web Developer'],
+    place: 'NunoX',
+    duration: 'Mar. 2024 ~ Present',
+    description: `* AI-powered textile digital twin SaaS platform
+    - Migrate project from Vue2 to Vue3
+    - Develop cropping & texture overlaying features of digital materials
+    - Maintain dynamic 2D & 3D visuals editing & generating features`,
+    devStack: [
+      'Vue3',
+      'Vue2',
+      'Vite',
+      'Vuetify',
+      'Canvas',
+      'Three.js',
+      'GitLab CICD',
+    ],
+  },
+  {
     id: 'efai',
     role: ['Software Developer'],
     place: 'Ever Fortune.AI',
-    duration: 'Aug. 2022 ~ Now',
+    duration: 'Aug. 2022 ~ Mar. 2024',
     description: `* Genetic testing analysis applications
-    - Construct enterprise-side admin CMS and client-side website start from scratch with React.js.
-    - Refactor released client-side website from Vue.js to Next.js for enhancing SEO performance.
-    - Maintain partial analysis report PDF generator service with Python.`,
+    - Constructed enterprise-side admin CMS and client-side website start from scratch with React.js.
+    - Refactored released client-side website from Vue.js to Next.js for enhancing SEO performance.
+    - Established CICD flow for automatic deployment.
+    - Maintained partial analysis report PDF generator service with Python.`,
     devStack: [
       'React.js',
       'Next.js',

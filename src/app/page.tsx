@@ -22,7 +22,7 @@ export default function Home() {
       <LanguageContainer />
       <WorkExperienceContainer />
       <EducationContainer />
-      <PlaygroundContainer />
+      {false && <PlaygroundContainer />}
     </main>
   );
 }

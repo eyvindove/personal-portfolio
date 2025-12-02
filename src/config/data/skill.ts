@@ -39,6 +39,19 @@ const skill: SkillType[] = [
     iconId: 'nodejs',
   },
   {
+    id: 'react-query',
+    label: 'TanStack Query',
+    level: 5,
+    iconId: 'reactquery',
+  },
+  {
+    id: 'zustand',
+    label: 'Zustand',
+    level: 5,
+    iconId: '',
+    iconText: 'Z',
+  },
+  {
     id: 'redux',
     label: 'Redux',
     level: 5,
@@ -53,27 +66,14 @@ const skill: SkillType[] = [
   {
     id: 'vitejs',
     label: 'Vite.js',
-    level: 4,
+    level: 5,
     iconId: 'vitejs',
   },
   {
     id: 'webpack',
     label: 'Webpack',
-    level: 3,
+    level: 4,
     iconId: 'webpack',
-  },
-  {
-    id: 'canvas',
-    label: 'Canvas',
-    level: 3,
-    iconId: '',
-    iconText: 'Canvas',
-  },
-  {
-    id: 'threejs',
-    label: 'Three.js',
-    level: 2,
-    iconId: 'threejs',
   },
   {
     id: 'npm',
@@ -84,7 +84,7 @@ const skill: SkillType[] = [
   {
     id: 'yarn',
     label: 'yarn',
-    level: 4,
+    level: 5,
     iconId: '',
     iconText: 'Yarn',
   },
@@ -94,12 +94,6 @@ const skill: SkillType[] = [
     level: 4,
     iconId: '',
     iconText: 'pnpm',
-  },
-  {
-    id: 'jest',
-    label: 'Jest',
-    level: 3,
-    iconId: 'jest',
   },
   {
     id: 'git',
@@ -126,13 +120,14 @@ const skill: SkillType[] = [
     iconId: 'tailwindcss',
   },
   {
-    id: 'sass',
-    label: 'Sass',
+    id: 'css-in-js',
+    label: 'CSS-in-JS',
     level: 5,
-    iconId: 'sass',
+    iconId: '',
+    iconText: 'CiJ',
   },
   {
-    id: 'cssmodules',
+    id: 'css-modules',
     label: 'CSS Modules',
     level: 4,
     iconId: '',
@@ -144,6 +139,25 @@ const skill: SkillType[] = [
     level: 4,
     iconId: '',
     iconText: 'RWD',
+  },
+  {
+    id: 'jest',
+    label: 'Jest',
+    level: 3,
+    iconId: 'jest',
+  },
+  {
+    id: 'canvas',
+    label: 'Canvas',
+    level: 3,
+    iconId: '',
+    iconText: 'Canvas',
+  },
+  {
+    id: 'threejs',
+    label: 'Three.js',
+    level: 2,
+    iconId: 'threejs',
   },
   {
     id: 'docker',

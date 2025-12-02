@@ -8,24 +8,26 @@ import ExternalLink from '../ExternalLink';
 export default function ExperienceCard({ item }: { item: ExperienceType }) {
   return (
     <CardBorder customInnerClasses={['flex flex-col gap-3', 'md:flex-row']}>
-      <div
-        className={cx('relative h-8 w-8 shrink-0 overflow-hidden rounded-sm')}
-      >
-        <Image
-          src={`/logo/${item.id}-logo.jpeg`}
-          alt={`${item.id} icon`}
-          fill={true}
-          sizes={'100%'}
-        />
-      </div>
+      {false && (
+        <div
+          className={cx('relative h-8 w-8 shrink-0 overflow-hidden rounded-sm')}
+        >
+          <Image
+            src={`/logo/${item.id}-logo.jpeg`}
+            alt={`${item.id} icon`}
+            fill={true}
+            sizes={'100%'}
+          />
+        </div>
+      )}
 
       <div className={cx('flex flex-col gap-2', 'text-sm', 'md:text-base')}>
-        <div className={cx('flex flex-col gap-1', 'py-1', 'md:flex-row')}>
+        <div className={cx('flex flex-col gap-1', '', 'md:flex-row')}>
           {item.role.map((role: string, index: number) => (
             <div
               key={index}
               className={cx({
-                'text-[--color-grey]': index > 0,
+                'text-zinc-500': index > 0,
               })}
             >
               <span>{index > 0 ? ` ↢ ` : ''}</span>
@@ -33,9 +35,9 @@ export default function ExperienceCard({ item }: { item: ExperienceType }) {
             </div>
           ))}
         </div>
-        <div className={cx('italic text-[--color-grey]')}>
+        <div className={cx('italic text-zinc-500')}>
           <div className={cx('text-sm')}>{item.place}</div>
-          <div className={cx('text-xs')}>{item.duration}</div>
+          <div className={cx('text-sm')}>{item.duration}</div>
         </div>
         <div className={cx('whitespace-pre-line text-sm')}>
           {item.description}
